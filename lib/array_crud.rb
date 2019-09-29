@@ -3,24 +3,24 @@ def create_an_empty_array
 end
 
 def create_an_array
-  ["a", "b", "c", "d"]
+  ["a", "b", "c", 4]
 end
 
 def add_element_to_end_of_array(array, element)
-  array.push("arrays!")
-  
+  array.push(element)
+  # array << element
 end
 
 def add_element_to_start_of_array(array, element)
-  array.unshift("wow")
+  array.unshift(element)
 end
 
 def remove_element_from_end_of_array(array)
-  array.pop()
+  array.pop
 end
 
 def remove_element_from_start_of_array(array)
-  array.shift()
+  array.shift
 end
 
 def retrieve_element_from_index(array, index_number)
@@ -28,13 +28,15 @@ def retrieve_element_from_index(array, index_number)
 end
 
 def retrieve_first_element_from_array(array)
-  array[0]
+  array.first
+  # array[1]
 end
 
 def retrieve_last_element_from_array(array)
-  array[-1]
+  array.last
+  # array[-1]
 end
 
 def update_element_from_index(array, index_number, element)
-  array[index_number] = "totally"
+  array[index_number] = element
 end
